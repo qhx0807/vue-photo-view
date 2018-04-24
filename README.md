@@ -1,18 +1,26 @@
 # vue-photo-view
 
-> A Vue.js project
+#### 安装
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+```bash
+$ npm install vue-photo-view --save
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+```javascript
+<script src="path/to/vue-photo-view.js"></script>
+
+```
+#### 使用
+
+```javascript
+import photoView from 'vue-photo-view'
+Vue.use(photoView)
+```
+
+```html
+<img src=""preview="1" preview-text="...">
+<img src=""preview="1" preview-text="...">
+```
+
+
+
