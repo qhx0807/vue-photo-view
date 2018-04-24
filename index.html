@@ -5,7 +5,16 @@
     <title>vue-photo-view</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
+    <div id="app">
+      <img style="height: 100px;width: 100px" src="http://os70o8m36.bkt.clouddn.com/IMG_0426.JPG" preview="1">
+    </div>
+    <script src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./dist/vue-photo-view.js"></script>
+    <script>
+      Vue.use(photoView)
+      new Vue({
+        el: '#app'
+      })
+    </script>
   </body>
 </html>

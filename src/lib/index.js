@@ -4,9 +4,9 @@ import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
 let $preview
 
 const photoView = {
-  install(Vue, opts) {
+  install(Vue, options) {
     const Preview = Vue.extend(vuePhotoView)
-    let opts = opts || {}
+    let opts = options || {}
     if (!$preview) {
       $preview = new Preview({
         el: document.createElement('div')
